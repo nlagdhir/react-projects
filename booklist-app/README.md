@@ -6,4 +6,4 @@
 
 ## Live Demo : 
 
-Click Here [https://react-course-best-sellers-app.netlify.app/] 
+https://react-course-best-sellers-app.netlify.app/ 
