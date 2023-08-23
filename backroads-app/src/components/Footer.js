@@ -1,24 +1,13 @@
-import { socialLinks } from "../data";
-import { pageLinks } from "../data";
+import { socialLinks, pageLinks } from "../data";
+import PageLinks from "./PageLinks";
 
 const Footer = () => {
   return (
     <>
       <footer className="section footer">
-        <ul className="footer-links">
-          {pageLinks.map((pageLink) => {
-            return (
-              <li key={pageLink.id}>
-                <a
-                  href={pageLink.href}
-                  className="footer-link"
-                >
-                  {pageLink.text}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+
+      <PageLinks parentClass="footer-links" childClass="footer-link" />  
+      
         <ul className="footer-icons">
           {socialLinks.map((socialLink) => {
             return (
@@ -37,7 +26,7 @@ const Footer = () => {
         </ul>
         <p className="copyright">
           copyright &copy; Backroads travel tours company
-          <span id="date"></span> all rights reserved
+          <span id="date">{new Date().getFullYear()}</span> all rights reserved
         </p>
       </footer>
     </>
