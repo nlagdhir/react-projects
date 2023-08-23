@@ -1,4 +1,5 @@
 import { pageLinks } from "../data";
+import PageLink from "./PageLink";
 
 const PageLinks = ({parentClass, childClass}) => {
   return (
@@ -6,11 +7,7 @@ const PageLinks = ({parentClass, childClass}) => {
       <ul className={parentClass} id={parentClass}>
         {pageLinks.map((link) => {
           return (
-            <li key={link.id}>
-              <a href={link.href} className={childClass}>
-                {link.text}
-              </a>
-            </li>
+            <PageLink key={link.id} link={link} childClass={childClass} />
           );
         })}
       </ul>
