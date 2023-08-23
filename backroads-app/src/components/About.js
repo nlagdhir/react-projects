@@ -6,7 +6,7 @@ const About = () => {
     <>
       <section className="section" id="about">
         
-          <Title title="about" subtitle="us" />
+          <Title title="about" subTitle="us" />
         
 
         <div className="section-center about-center">
