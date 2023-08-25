@@ -2,10 +2,11 @@ import { useState } from "react";
 
 const ErrorExample = () => {
 
-  let [count, setCount] = useState(0);
+  let count = 0;
 
   const handleButtonClick = () => {
-    setCount(count + 1)
+    count = count + 1;
+    console.log(count);
   }
 
   return (
