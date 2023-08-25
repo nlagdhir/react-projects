@@ -1,6 +1,7 @@
 import ErrorExample from "./concepts/01-useState/01-error-example";
 import UseStateBasics from "./concepts/01-useState/02-useState-basics";
 import UseStateArray from "./concepts/01-useState/03-useState-array";
+import UseStateObject from "./concepts/01-useState/04-useState-object";
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
       <h2>Advanced React</h2>
       {/* <ErrorExample /> */}
       {/* <UseStateBasics /> */}
-      <UseStateArray />
+      {/* <UseStateArray /> */}
+      <UseStateObject />
     </div>
   );
 }
