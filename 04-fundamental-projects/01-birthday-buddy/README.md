@@ -2,9 +2,7 @@
 
 [Birthday Buddy](https://www.figma.com/file/e2vsLe9DMnXZIygNHkwGL1/Birthday-buddy?node-id=0%3A1&t=AGNWdO5QQGOoNCfD-1)
 
-## Steps
-
-- don't worry about CSS, checkout example image
+[Live Demo](https://birthday-buddy-app-react.netlify.app/)
 
 #### Import Data
 
