@@ -9,6 +9,10 @@ import MultipleEffects from "./concepts/02-useEffect/03-multiple-effects";
 import FetchData from "./concepts/02-useEffect/04-fetch-data";
 import MultipleReturnsBasics from "./concepts/03-conditional-rendering/01-multiple-returns-basics";
 import MultipleReturnsFetchData from "./concepts/03-conditional-rendering/02-multiple-returns-fetch-data";
+import ShortCircuitOverview from "./concepts/03-conditional-rendering/04-short-circuit-overview";
+import ShortCircuitExamples from "./concepts/03-conditional-rendering/05-short-circuit-examples";
+import ToggleChallenge from "./concepts/03-conditional-rendering/06-toggle-challenge";
+import UserChallenge from "./concepts/03-conditional-rendering/07-user-challenge";
 
 function App() {
   return (
@@ -24,9 +28,15 @@ function App() {
       {/* <UseEffectBasics /> */}
       {/* <MultipleEffects /> */}
       {/* <FetchData /> */}
+
+      {/* <MultipleReturnsBasics /> */}
+      {/* <MultipleReturnsFetchData /> */}
+      {/* <ShortCircuitOverview /> */}
+      {/* <ShortCircuitExamples />  */}
+      {/* <ToggleChallenge /> */}
+      <UserChallenge />
       
-      {/* <MultipleReturnsBasics /> */} 
-      <MultipleReturnsFetchData />
+
     </div>
   );
 }

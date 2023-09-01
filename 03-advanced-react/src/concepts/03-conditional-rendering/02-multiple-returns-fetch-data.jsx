@@ -6,23 +6,23 @@ const MultipleReturnsFetchData = () => {
   const [error, setError] = useState(false);
   const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const res = await fetch(url);
-        if (!res.ok) {
-          setError(true);
-          setLoading(false);
-          return;
-        }
-        const user = await res.json();
-        setUser(user);
-      } catch (error) {
+  const fetchUser = async () => {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) {
         setError(true);
+        setLoading(false);
+        return;
       }
-      setLoading(false);
-    };
+      const user = await res.json();
+      setUser(user);
+    } catch (error) {
+      setError(true); 
+    }
+    setLoading(false);
+  }; 
 
+  useEffect(() => {
     fetchUser();
   }, []);
 
@@ -34,17 +34,19 @@ const MultipleReturnsFetchData = () => {
     return <h2>Error...</h2>;
   }
 
+  const { avatar_url, login, company, bio } = user;
+
   return (
     <div>
       <img
-        src={user.avatar_url}
-        alt={user.login}
+        src={avatar_url}
+        alt={login}
         style={{ width: "100px", borderRadius: "50%" }}
       />
       <div>
-        <h3>{user.login}</h3>
-        <p>working at {user.company}</p>
-        <p>{user.bio}</p>
+        <h3>{login}</h3>
+        <p>working at {company}</p>
+        <p>{bio}</p>
       </div>
     </div>
   );

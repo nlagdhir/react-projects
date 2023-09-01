@@ -14,7 +14,7 @@ const Example = () => {
   // useEffect(() => {
   //   console.log('hello there');
   // }, []);
-  return <h2>example</h2>;
+  return <h2>example</h2>; 
 };
 
 export default Example;
