@@ -1,8 +1,9 @@
-# React + Vite
+## Tours App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+the flow of the application should look something like this:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- App.jsx fetches tours data from a URL and sets the state of the Tours component to store the data.
+- The Tours component maps over the tours array and renders a Tour component for each tour.
+- Each Tour component has a "remove tour" button and a "read more" button.When the "remove tour" button is clicked, the Tours component updates its state to remove the tour from the tours array.
+- When the "read more" button is clicked, the Tour component updates its state to toggle a "read more" flag and conditionally renders the full description.
+- When the "re-fetch" button is clicked, the Tours component re-fetches the tours data from the URL and updates its state.
