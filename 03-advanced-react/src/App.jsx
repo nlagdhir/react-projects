@@ -7,6 +7,7 @@ import CodeExample from "./concepts/02-useEffect/01-code-example";
 import UseEffectBasics from "./concepts/02-useEffect/02-useEffect-basics";
 import MultipleEffects from "./concepts/02-useEffect/03-multiple-effects";
 import FetchData from "./concepts/02-useEffect/04-fetch-data";
+import CleanupFunction from "./concepts/02-useEffect/05-cleanup-function";
 import MultipleReturnsBasics from "./concepts/03-conditional-rendering/01-multiple-returns-basics";
 import MultipleReturnsFetchData from "./concepts/03-conditional-rendering/02-multiple-returns-fetch-data";
 import ShortCircuitOverview from "./concepts/03-conditional-rendering/04-short-circuit-overview";
@@ -28,13 +29,14 @@ function App() {
       {/* <UseEffectBasics /> */}
       {/* <MultipleEffects /> */}
       {/* <FetchData /> */}
+      <CleanupFunction />
 
       {/* <MultipleReturnsBasics /> */}
       {/* <MultipleReturnsFetchData /> */}
       {/* <ShortCircuitOverview /> */}
       {/* <ShortCircuitExamples />  */}
       {/* <ToggleChallenge /> */}
-      <UserChallenge />
+      {/* <UserChallenge /> */}
       
 
     </div>
